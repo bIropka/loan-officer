@@ -1,0 +1,23 @@
+/*******************************************************************************
+********* social-links
+*******************************************************************************/
+
+.social-links {
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3px;
+    color: $color-white;
+
+    &:hover {
+      color: $color-blue;
+    }
+
+  }
+
+  i {
+    color: inherit;
+  }
+
+}

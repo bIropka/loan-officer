@@ -3,7 +3,11 @@
 *******************************************************************************/
 
 * {
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: $text-medium;
 }
 
 body {
@@ -15,6 +19,86 @@ body {
 }
 
 main {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
   flex-grow: 1;
   background: #e6f1fc;
+
+  > .container {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+
+}
+
+.content-block {
+  width: 100%;
+  background: $color-white;
+  padding: 45px;
+
+  @media(max-width: 639px) {
+    padding: 25px;
+  }
+
+}
+
+a {
+  color: $color-blue;
+  text-decoration: underline;
+  transition: .4s;
+
+  &:hover {
+    color: $color-blue;
+    text-decoration: none;
+  }
+
+}
+
+h1 {
+  font-size: $heading-large;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0;
+
+  span {
+    font-weight: inherit;
+    font-size: inherit;
+  }
+
+  @media(max-width: 980px) {
+    font-size: $heading-medium;
+  }
+
+  @media(max-width: 639px) {
+    font-size: $heading-small;
+  }
+
+}
+
+.note {
+  font-size: $text-large;
+  color: $color-grey;
+  margin: $margin-v-small;
+}
+
+[type=color],
+[type=date],
+[type=datetime-local],
+[type=datetime],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week],
+textarea,
+.button {
+  height: 50px;
+  margin: 0;
 }

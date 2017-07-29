@@ -2,6 +2,7 @@
 /*******************************************************************************
 ********* fonts
 *******************************************************************************/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -8016,6 +8017,13 @@ a.thumbnail image {
 /*******************************************************************************
 ********* general
 *******************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; }
+
 body {
   display: flex;
   flex-direction: column;
@@ -8024,8 +8032,70 @@ body {
   min-height: 100vh; }
 
 main {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
   flex-grow: 1;
   background: #e6f1fc; }
+  main > .container {
+    display: flex;
+    align-items: stretch;
+    width: 100%; }
+
+.content-block {
+  width: 100%;
+  background: #fff;
+  padding: 45px; }
+  @media (max-width: 639px) {
+    .content-block {
+      padding: 25px; } }
+
+a {
+  color: #49a8eb;
+  text-decoration: underline;
+  transition: .4s; }
+  a:hover {
+    color: #49a8eb;
+    text-decoration: none; }
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0; }
+  h1 span {
+    font-weight: inherit;
+    font-size: inherit; }
+  @media (max-width: 980px) {
+    h1 {
+      font-size: 42px; } }
+  @media (max-width: 639px) {
+    h1 {
+      font-size: 36px; } }
+
+.note {
+  font-size: 18px;
+  color: #999;
+  margin: 15px 0; }
+
+[type=color],
+[type=date],
+[type=datetime-local],
+[type=datetime],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week],
+textarea,
+.button {
+  height: 50px;
+  margin: 0; }
 
 /*******************************************************************************
 ********* header
@@ -8033,6 +8103,53 @@ main {
 header {
   background: #fff;
   flex-grow: 0; }
+  header .columns {
+    padding: 0; }
+    @media (max-width: 1170px) {
+      header .columns {
+        padding: 0 15px; } }
+    @media (max-width: 639px) {
+      header .columns {
+        text-align: center; } }
+  header .logo {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 1;
+    line-height: 1; }
+    header .logo span {
+      color: #999;
+      font-size: inherit;
+      font-weight: inherit; }
+    header .logo:hover {
+      opacity: .7; }
+    @media (max-width: 639px) {
+      header .logo {
+        display: block; } }
+  header .to-search {
+    text-transform: capitalize;
+    margin: 0 0 0 75px;
+    line-height: 1;
+    position: relative; }
+    header .to-search:before {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 24px;
+      background: #999;
+      position: absolute;
+      left: -37px;
+      top: -3px; }
+    @media (max-width: 639px) {
+      header .to-search {
+        display: inline-block;
+        margin: 10px 0; }
+        header .to-search:before {
+          display: none; } }
+  header .sign-in,
+  header .sign-up {
+    text-transform: capitalize; }
 
 /*******************************************************************************
 ********* footer
@@ -8040,11 +8157,56 @@ header {
 footer {
   flex-grow: 0;
   background: #000; }
+  footer .columns {
+    padding: 0; }
+    @media (max-width: 1170px) {
+      footer .columns {
+        padding: 0 15px; } }
+    @media (max-width: 639px) {
+      footer .columns {
+        text-align: center; } }
   footer .copyright {
-    color: #fff; }
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase; }
+  footer span {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500; }
+  footer .social-links {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 10px; }
 
 /*******************************************************************************
 ********* form-search
 *******************************************************************************/
+.form-search {
+  background: #49a8eb;
+  padding: 25px; }
+  .form-search button[type='submit'] {
+    width: 100%;
+    text-align: center;
+    background: #ffcf26;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+    padding: 0; }
+  @media (max-width: 639px) {
+    .form-search input {
+      margin: 0 0 15px 0; } }
+
+/*******************************************************************************
+********* social-links
+*******************************************************************************/
+.social-links a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 3px;
+  color: #fff; }
+  .social-links a:hover {
+    color: #49a8eb; }
+.social-links i {
+  color: inherit; }
 
 /*# sourceMappingURL=all-styles.css.map */

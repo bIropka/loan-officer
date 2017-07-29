@@ -3,5 +3,25 @@
 *******************************************************************************/
 
 .form-search {
+  background: $color-blue;
+  padding: 25px;
+
+  button[type='submit'] {
+    width: 100%;
+    text-align: center;
+    background: $color-yellow;
+    font-size: $text-large;
+    font-weight: 300;
+    color: $color-black;
+    padding: 0;
+  }
+
+  @media(max-width: 639px) {
+
+    input {
+      margin: 0 0 15px 0;
+    }
+
+  }
 
 }

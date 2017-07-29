@@ -6,8 +6,35 @@ footer {
   flex-grow: 0;
   background: #000;
 
+  .columns {
+    padding: 0;
+
+    @media(max-width: 1170px) {
+      padding: 0 15px;
+    }
+
+    @media(max-width: 639px) {
+      text-align: center;
+    }
+
+  }
+
   .copyright {
     color:#fff;
+    font-size: $text-small;
+    text-transform: uppercase;
+  }
+
+  span {
+    font-size: $text-small;
+    color: $color-white;
+    font-weight: 500;
+  }
+
+  .social-links {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 10px;
   }
 
 }
