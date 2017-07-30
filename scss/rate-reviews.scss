@@ -1,0 +1,32 @@
+/*******************************************************************************
+********* rate-reviews
+*******************************************************************************/
+
+.rate-reviews {
+
+  ul {
+    display: inline-block;
+    margin: 0 5px 0 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  i {
+    font-size: $text-large;
+    color: $color-yellow;
+  }
+
+  a {
+    font-size: $text-small;
+    color: $color-blue;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+}

@@ -175,3 +175,21 @@ input:focus:-moz-placeholder {
 input:focus:-ms-input-placeholder {
   color: transparent;
 }
+
+.breadcrumbs li {
+  text-transform: none;
+  line-height: 1;
+  font-size: 12px;
+
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 1;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+}
