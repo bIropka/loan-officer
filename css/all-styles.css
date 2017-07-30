@@ -8093,8 +8093,7 @@ h1 {
 [type=time],
 [type=url],
 [type=week],
-textarea,
-.button {
+textarea {
   height: 50px;
   margin: 0;
   padding-left: 20px;
@@ -8108,7 +8107,8 @@ textarea,
   font-size: 20px;
   font-weight: 300;
   color: #444;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   .button-submit:hover {
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
     background: #ffcf26;
@@ -8344,29 +8344,77 @@ form .zip-fields {
 /*******************************************************************************
 ********* officer-list
 *******************************************************************************/
-.officer-list {
+.officer-list .officer-item {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 30px 0 0 0; }
-  .officer-list .officer-photo {
+  padding: 30px 0;
+  border-bottom: 1px solid #999; }
+  .officer-list .officer-item:last-of-type {
+    border-bottom: none; }
+.officer-list .officer-photo {
+  display: block;
+  flex-grow: 0;
+  width: 132px;
+  height: 132px;
+  border: 5px solid #49a8eb;
+  border-radius: 50%;
+  overflow: hidden; }
+  .officer-list .officer-photo img {
     display: block;
-    flex-grow: 0;
-    width: 132px;
-    height: 132px;
-    border: 5px solid #49a8eb;
-    border-radius: 50%;
-    overflow: hidden; }
-    .officer-list .officer-photo img {
-      display: block;
-      margin: 0;
-      width: auto;
-      height: auto;
-      min-width: 100%;
-      min-height: 100%; }
+    margin: 0;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%; }
+.officer-list .officer-data {
+  flex-grow: 1;
+  margin: 0 25px; }
+.officer-list .officer-reviews ul {
+  display: inline-block;
+  margin: 0 5px 0 0; }
+.officer-list .officer-reviews li {
+  display: inline-block; }
+.officer-list .officer-reviews i {
+  font-size: 18px;
+  color: #ffcf26; }
+.officer-list .officer-reviews a {
+  font-size: 14px;
+  color: #49a8eb;
+  text-decoration: none; }
+  .officer-list .officer-reviews a:hover {
+    text-decoration: underline; }
+.officer-list h3 {
+  font-size: 24px;
+  margin: 0 0 5px 0; }
+.officer-list .officer-company {
+  color: #999;
+  font-size: 18px; }
+.officer-list .officer-id {
+  font-size: 14px;
+  color: #444; }
+.officer-list .officer-id-value {
+  color: #49a8eb;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0 0 0 5px; }
+  .officer-list .officer-id-value:hover {
+    text-decoration: underline; }
+.officer-list .button {
+  display: block;
+  width: 190px;
+  flex-grow: 0;
+  text-decoration: none;
+  line-height: 1;
+  align-self: center;
+  margin: 0; }
+@media (max-width: 639px) {
+  .officer-list .officer-item {
+    flex-wrap: wrap;
+    justify-content: center; }
   .officer-list .officer-data {
-    flex-grow: 1; }
-  .officer-list h3 {
-    font-size: 24px; }
+    width: 100%;
+    text-align: center;
+    margin: 20px 0; } }
 
 /*# sourceMappingURL=all-styles.css.map */
