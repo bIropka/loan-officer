@@ -7,13 +7,47 @@
   padding: 25px;
 
   button[type='submit'] {
-    width: 100%;
-    text-align: center;
-    background: $color-yellow;
+    height: 50px;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $color-grey;
     font-size: $text-large;
-    font-weight: 300;
-    color: $color-black;
-    padding: 0;
+    opacity: 1;
+  }
+
+  input::-moz-placeholder {
+    color: $color-grey;
+    font-size: $text-large;
+    opacity: 1;
+  }
+
+  input:-moz-placeholder {
+    color: $color-grey;
+    font-size: $text-large;
+    opacity: 1;
+  }
+
+  input:-ms-input-placeholder {
+    color: $color-grey;
+    font-size: $text-large;
+    opacity: 1;
+  }
+
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  input:focus::-moz-placeholder {
+    color: transparent;
+  }
+
+  input:focus:-moz-placeholder {
+    color: transparent;
+  }
+
+  input:focus:-ms-input-placeholder {
+    color: transparent;
   }
 
   @media(max-width: 639px) {

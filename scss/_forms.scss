@@ -1,0 +1,98 @@
+/*******************************************************************************
+********* forms
+*******************************************************************************/
+
+form {
+
+  label {
+
+    span {
+      display: block;
+      margin: 0 0 10px 0;
+      color: #666;
+      font-weight: 500;
+    }
+
+    &.field-with-note {
+      input {
+        display: inline-block;
+        max-width: 50%;
+        margin: 0 15px 0 0;
+      }
+    }
+
+  }
+
+  select {
+    height: 50px;
+    border: 1px solid #cacaca;
+    margin: 0;
+  }
+
+  textarea {
+    height: 280px;
+  }
+
+  input[type='checkbox'] {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  input[type='checkbox'] + label {
+    margin: 0;
+    color: $color-grey;
+    font-size: $text-small;
+    padding: 0 0 0 30px;
+    position: relative;
+  }
+
+  input[type='checkbox'] + label i {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $color-grey;
+    border-radius: 2px;
+    color: transparent;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+  }
+
+  input[type='checkbox']:checked + label i {
+    color: $color-blue;
+  }
+
+  .zip-fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    label {
+      margin: 0 20px 0 0;
+    }
+
+    label:last-of-type {
+      margin: 0 0 0 20px;
+    }
+
+    @media(max-width: 480px) {
+      flex-wrap: wrap;
+
+      label {
+        width: 100%;
+        margin: 0 0 15px 0;
+      }
+
+      label:last-of-type {
+        margin: 15px 0 0 0;
+      }
+
+    }
+
+  }
+
+}

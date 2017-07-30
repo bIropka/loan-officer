@@ -8,6 +8,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-size: $text-medium;
+  color: #343434;
 }
 
 body {
@@ -101,4 +102,72 @@ textarea,
 .button {
   height: 50px;
   margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button-submit {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background: $color-yellow;
+  font-size: $text-extra-large;
+  font-weight: 300;
+  color: $color-dark;
+  padding: 0;
+
+  &:hover {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .25);
+    background: $color-yellow;
+    color: $color-dark;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, .25);
+    background: $color-yellow;
+    color: $color-dark;
+    outline: none;
+  }
+
+}
+
+input::-webkit-input-placeholder {
+  color: #444;
+  font-size: $text-large;
+  opacity: 1;
+}
+
+input::-moz-placeholder {
+  color: #444;
+  font-size: $text-large;
+  opacity: 1;
+}
+
+input:-moz-placeholder {
+  color: #444;
+  font-size: $text-large;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: #444;
+  font-size: $text-large;
+  opacity: 1;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
 }
