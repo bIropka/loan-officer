@@ -137,7 +137,7 @@
 <div class="reveal modal" id="modal-sign-in" data-reveal>
     <div class="modal-title">Welcome</div>
     <div class="modal-tab">
-        <a>sign in</a>
+        <a>Sign in</a>
         <a data-open="modal-sign-up">New account</a>
     </div>
     <form action="#">
@@ -148,21 +148,21 @@
                 </label>
             </div>
             <div class="small-12 columns">
-                <div class="small-12 columns">
-                    <label>
-                        <input type="password" placeholder="Enter password">
-                    </label>
-                </div>
+                <label>
+                    <input type="password" placeholder="Enter password">
+                </label>
             </div>
             <div class="small-12 columns">
-                <button type="submit">Submit</button>
+                <button type="submit" class="button button-submit">Submit</button>
             </div>
         </div>
     </form>
     <div class="sign-social">
-        <span>Or sign with:</span>
-        <a href="#"><i class="fa fa-google-plus"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
+        <div class="sign-social-title">
+            <span>Or sign with:</span>
+        </div>
+        <a href="#"><i class="fa fa-google"></i><span>Google</span></a>
+        <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
     </div>
     <button class="close-button" data-close aria-label="Close modal" type="button">
         <span aria-hidden="true">&times;</span>
@@ -172,7 +172,7 @@
 <div class="reveal modal" id="modal-sign-up" data-reveal>
     <div class="modal-title">Welcome</div>
     <div class="modal-tab">
-        <a data-open="modal-sign-in">sign in</a>
+        <a data-open="modal-sign-in">Sign in</a>
         <a>New account</a>
     </div>
     <form action="#">
@@ -183,11 +183,9 @@
                 </label>
             </div>
             <div class="small-12 columns">
-                <div class="small-12 columns">
-                    <label>
-                        <input type="password" placeholder="Enter password">
-                    </label>
-                </div>
+                <label>
+                    <input type="password" placeholder="Enter password">
+                </label>
             </div>
             <div class="small-6 columns">
                 <label>
@@ -222,12 +220,11 @@
                 </div>
             </div>
             <div class="small-12 columns">
-                <input id="checkbox-sign-up" type="checkbox"><label for="checkbox-sign-up"><i class="fa fa-check"></i>I acknowledge that I am over the age of eighteen and that I consent to the use of all or part of my comments/feedback by LendingTree.</label>
+                <input id="checkbox-sign-up" type="checkbox"><label for="checkbox-sign-up"><i class="fa fa-check"></i>I am a Loan officer</label>
             </div>
             <div class="small-12 columns">
                 <div class="modal-sub-title">Professional Information</div>
                 <label>
-                    <span>Subject</span>
                     <select>
                         <option value="default" selected>Select your category</option>
                         <option value="Select-1">Select One</option>
@@ -238,14 +235,16 @@
                 </label>
             </div>
             <div class="small-12 columns">
-                <button type="submit">Submit</button>
+                <button type="submit" class="button button-submit">Submit</button>
             </div>
         </div>
     </form>
     <div class="sign-social">
-        <span>Or connect with:</span>
-        <a href="#"><i class="fa fa-google-plus"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
+        <div class="sign-social-title">
+            <span>Or connect with:</span>
+        </div>
+        <a href="#"><i class="fa fa-google"></i><span>Google</span></a>
+        <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
     </div>
     <button class="close-button" data-close aria-label="Close modal" type="button">
         <span aria-hidden="true">&times;</span>

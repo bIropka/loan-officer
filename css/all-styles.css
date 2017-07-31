@@ -8058,6 +8058,8 @@ a {
   a:hover {
     color: #49a8eb;
     text-decoration: none; }
+  a:focus {
+    outline: none; }
 
 h1,
 h2 {
@@ -8753,5 +8755,155 @@ form .zip-fields {
 /*******************************************************************************
 ********* modal
 *******************************************************************************/
+.modal {
+  padding: 20px; }
+  .modal form {
+    width: calc(100% + 30px);
+    margin: 0 -15px; }
+    .modal form .columns {
+      padding: 10px 15px; }
+    .modal form input:not([type='checkbox']) {
+      height: 40px;
+      font-size: 16px; }
+    .modal form select {
+      height: 40px; }
+  .modal .close-button span {
+    font-size: 36px; }
+  .modal input::-webkit-input-placeholder {
+    color: #999;
+    font-size: 16px;
+    opacity: 1; }
+  .modal input::-moz-placeholder {
+    color: #999;
+    font-size: 16px;
+    opacity: 1; }
+  .modal input:-moz-placeholder {
+    color: #999;
+    font-size: 16px;
+    opacity: 1; }
+  .modal input:-ms-input-placeholder {
+    color: #999;
+    font-size: 16px;
+    opacity: 1; }
+  .modal input:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .modal input:focus::-moz-placeholder {
+    color: transparent; }
+  .modal input:focus:-moz-placeholder {
+    color: transparent; }
+  .modal input:focus:-ms-input-placeholder {
+    color: transparent; }
+  .modal input[type='checkbox'] + label {
+    color: #49a8eb; }
+  .modal .button-submit {
+    background: #49a8eb;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    margin: 15px 0 0 0; }
+    .modal .button-submit:hover, .modal .button-submit:active, .modal .button-submit:focus {
+      background: #ffcf26;
+      box-shadow: none;
+      color: #444; }
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 500; }
+
+.modal-sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 10px 0; }
+
+.modal-tab {
+  border-bottom: 1px solid #999;
+  margin: 15px 0 20px; }
+  .modal-tab a {
+    display: inline-block;
+    padding: 0 0 15px 0;
+    position: relative;
+    text-decoration: none;
+    color: #49a8eb;
+    font-size: 18px; }
+    .modal-tab a:first-of-type {
+      margin: 0 20px 0 0; }
+    .modal-tab a:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #49a8eb;
+      position: absolute;
+      left: 0;
+      bottom: -1px; }
+    .modal-tab a[data-open] {
+      color: #444; }
+      .modal-tab a[data-open]:after {
+        display: none; }
+
+.sign-social {
+  text-align: center;
+  margin: 10px 0 0 0; }
+  .sign-social a {
+    display: inline-block;
+    width: 150px;
+    padding: 8px 10px;
+    background: #49a8eb;
+    text-decoration: none;
+    border-radius: 25px;
+    text-align: left;
+    margin: 15px; }
+    @media (max-width: 480px) {
+      .sign-social a {
+        margin: 5px 10px; } }
+    .sign-social a span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 18px;
+      color: #fff;
+      margin: 0 0 0 10px;
+      transition: .4s; }
+    .sign-social a i {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      font-size: 18px;
+      color: #49a8eb;
+      background: #fff; }
+    .sign-social a:nth-of-type(2) {
+      background: #f3f3f3; }
+      .sign-social a:nth-of-type(2) span {
+        color: #49a8eb; }
+      .sign-social a:nth-of-type(2) i {
+        color: #fff;
+        background: #49a8eb; }
+    .sign-social a:hover span {
+      margin: 0 0 0 5px; }
+
+.sign-social-title {
+  display: block;
+  width: 100%;
+  position: relative; }
+  .sign-social-title span {
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+    background: #fff; }
+  .sign-social-title:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
 
 /*# sourceMappingURL=all-styles.css.map */
