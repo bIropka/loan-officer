@@ -158,4 +158,9 @@
 
   }
 
+  @media(max-width: 639px) {
+    width: calc(100% + 50px);
+    margin: 15px -25px;
+  }
+
 }

@@ -24,11 +24,11 @@
 
             <div class="small-12 medium-3 columns sm medium-text-right">
 
-                <a href="#" class="sign-in">sign in</a>
+                <a class="sign-in"  data-open="modal-sign-in">sign in</a>
 
                 <span>or</span>
 
-                <a href="#" class="sign-up">join</a>
+                <a class="sign-up"  data-open="modal-sign-up">join</a>
 
             </div>
 
@@ -245,6 +245,128 @@
     </div>
 
 </footer>
+
+<div class="reveal modal" id="modal-sign-in" data-reveal>
+    <div class="modal-title">Welcome</div>
+    <div class="modal-tab">
+        <a>sign in</a>
+        <a data-open="modal-sign-up">New account</a>
+    </div>
+    <form action="#">
+        <div class="row">
+            <div class="small-12 columns">
+                <label>
+                    <input type="email" placeholder="Enter email">
+                </label>
+            </div>
+            <div class="small-12 columns">
+                <div class="small-12 columns">
+                    <label>
+                        <input type="password" placeholder="Enter password">
+                    </label>
+                </div>
+            </div>
+            <div class="small-12 columns">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+    <div class="sign-social">
+        <span>Or sign with:</span>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="reveal modal" id="modal-sign-up" data-reveal>
+    <div class="modal-title">Welcome</div>
+    <div class="modal-tab">
+        <a data-open="modal-sign-in">sign in</a>
+        <a>New account</a>
+    </div>
+    <form action="#">
+        <div class="row">
+            <div class="small-12 columns">
+                <label>
+                    <input type="email" placeholder="Enter email">
+                </label>
+            </div>
+            <div class="small-12 columns">
+                <div class="small-12 columns">
+                    <label>
+                        <input type="password" placeholder="Enter password">
+                    </label>
+                </div>
+            </div>
+            <div class="small-6 columns">
+                <label>
+                    <input type="text" placeholder="First name">
+                </label>
+            </div>
+            <div class="small-6 columns">
+                <label>
+                    <input type="text" placeholder="Last name">
+                </label>
+            </div>
+            <div class="small-6 columns">
+                <label>
+                    <input type="text" placeholder="Zip">
+                </label>
+            </div>
+            <div class="small-12 columns">
+                <div class="zip-fields">
+                    <label>
+                        <input type="text" placeholder="555">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="555">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="555">
+                    </label>
+                    <span>ext</span>
+                    <label>
+                        <input type="text" placeholder="5555">
+                    </label>
+                </div>
+            </div>
+            <div class="small-12 columns">
+                <input id="checkbox-sign-up" type="checkbox"><label for="checkbox-sign-up"><i class="fa fa-check"></i>I acknowledge that I am over the age of eighteen and that I consent to the use of all or part of my comments/feedback by LendingTree.</label>
+            </div>
+            <div class="small-12 columns">
+                <div class="modal-sub-title">Professional Information</div>
+                <label>
+                    <span>Subject</span>
+                    <select>
+                        <option value="default" selected>Select your category</option>
+                        <option value="Select-1">Select One</option>
+                        <option value="Select-2">Select Two</option>
+                        <option value="Select-3">Select Three</option>
+                        <option value="Select-4">Select Four</option>
+                    </select>
+                </label>
+            </div>
+            <div class="small-12 columns">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+    <div class="sign-social">
+        <span>Or connect with:</span>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<script src="libs/jquery-3.2.1.min.js"></script>
+<script src="libs/foundation-6.4.1-custom/foundation.min.js"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>
