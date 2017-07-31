@@ -2,3 +2,50 @@
 ********* profile-contacts
 *******************************************************************************/
 
+.profile-contacts {
+  background: #f3f3f3;
+  padding: 25px 30px;
+  margin: 0 0 50px 0;
+}
+
+.profile-contacts-item {
+  margin: 0 0 15px 0;
+
+  &:last-of-type {
+    margin: 0;
+  }
+
+  span {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  address {
+    font-style: normal;
+    font-size: $text-small;
+    line-height: 1.2;
+  }
+
+  a {
+    font-size: $text-small;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;}
+
+    &[href^="tel:"] {
+      color: $color-dark;
+    }
+
+    &:not([href^="tel:"]) {
+      display: inline-block;
+      max-width: 100%;
+      overflow: hidden;
+      white-space: normal;
+      text-overflow: ellipsis;
+    }
+
+  }
+
+}

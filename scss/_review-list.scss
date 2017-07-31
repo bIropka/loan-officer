@@ -1,0 +1,108 @@
+/*******************************************************************************
+********* profile-reviews
+*******************************************************************************/
+
+.review-list {
+
+}
+
+.review-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 25px 0;
+  border-bottom: 1px solid $color-grey;
+}
+
+.review-reviewer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 200px;
+  flex-shrink: 0;
+  margin: 0 30px 0 0;
+  position: relative;
+  padding: 0 0 30px 0;
+}
+
+.review-category {
+  font-size: $text-small;
+  color: $color-grey;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+
+.review-name {
+  margin: 0 0 15px 0;
+  color: $color-grey;
+  font-size: $text-small;
+
+  span {
+    font-size: inherit;
+    color: $color-dark;
+    font-weight: 500;
+    margin: 0 5px 0 0;
+  }
+
+}
+
+.review-date {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  span {
+    font-size: $text-small;
+    font-weight: 500;
+  }
+
+  time {
+    color: $color-grey;
+    font-size: $text-extra-small;
+    font-weight: 300;
+    padding: 0 0 2px 0;
+  }
+
+}
+
+.review-body {
+  width: 100%;
+  max-width: 760px;
+}
+
+.review-title {
+  font-size: $text-small;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+
+.review-text {
+  font-size: $text-small;
+
+  a {
+    font-size: inherit;
+  }
+
+}
+
+@media(max-width: 639px) {
+
+  .review-item {
+    flex-wrap: wrap;
+  }
+
+  .review-body {
+    margin: 30px 0 0 0;
+    max-width: none;
+  }
+
+  .review-title {
+    margin: 0 0 10px 0;
+  }
+
+}

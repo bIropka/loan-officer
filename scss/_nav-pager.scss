@@ -1,0 +1,83 @@
+/*******************************************************************************
+********* nav-pager
+*******************************************************************************/
+
+.nav-pager {
+  text-align: right;
+  margin: 30px 0 0 0;
+}
+
+.nav-pager-amount {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: $text-small;
+  color: $color-grey;
+  margin: 0 20px 0 0;
+}
+
+.nav-pager-list {
+  display: inline-block;
+  vertical-align: middle;
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 2px;
+    text-decoration: none;
+    font-size: $text-extra-small;
+
+    &.active {
+      background: #f3f3f3;
+      color: $color-dark;
+    }
+
+    &:hover {
+      color: $color-dark;
+    }
+
+  }
+
+}
+
+.nav-pager-controls {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+
+  a {
+    text-decoration: none;
+  }
+
+  i {
+    font-size: $text-small;
+    color: inherit;
+  }
+
+  span {
+    margin: 0 5px;
+    color: inherit;
+    font-size: $text-small;
+  }
+
+  a:hover span {
+    text-decoration: underline;
+  }
+
+}
+
+@media(max-width: 480px) {
+
+  .nav-pager {
+    text-align: center;
+  }
+
+  .nav-pager-controls {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+}

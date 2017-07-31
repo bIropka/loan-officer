@@ -57,11 +57,12 @@ a {
 
 }
 
-h1 {
+h1,
+h2 {
   font-size: $heading-large;
   font-weight: 300;
   line-height: 1;
-  margin: 0;
+  margin: 0 0 15px 0;
 
   span {
     font-weight: inherit;
@@ -85,7 +86,6 @@ h3 {
 .note {
   font-size: $text-large;
   color: $color-grey;
-  margin: $margin-v-small;
 }
 
 [type=color],

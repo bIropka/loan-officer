@@ -2,3 +2,29 @@
 ********* profile-about
 *******************************************************************************/
 
+.profile-about {
+  margin: 0 0 50px 0;
+
+  p {
+    font-size: $text-small;
+    line-height: 30px;
+
+    a {
+      font-size: inherit;
+    }
+
+  }
+
+  .profile-about-note {
+    font-size: $text-small;
+    font-weight: 700;
+
+    a,
+    span {
+      font-weight: 400;
+      font-size: inherit;
+    }
+
+  }
+
+}

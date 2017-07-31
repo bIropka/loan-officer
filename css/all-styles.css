@@ -8059,25 +8059,28 @@ a {
     color: #49a8eb;
     text-decoration: none; }
 
-h1 {
+h1,
+h2 {
   font-size: 48px;
   font-weight: 300;
   line-height: 1;
-  margin: 0; }
-  h1 span {
+  margin: 0 0 15px 0; }
+  h1 span,
+  h2 span {
     font-weight: inherit;
     font-size: inherit; }
   @media (max-width: 980px) {
-    h1 {
+    h1,
+    h2 {
       font-size: 42px; } }
   @media (max-width: 639px) {
-    h1 {
+    h1,
+    h2 {
       font-size: 36px; } }
 
 .note {
   font-size: 18px;
-  color: #999;
-  margin: 15px 0; }
+  color: #999; }
 
 [type=color],
 [type=date],
@@ -8248,7 +8251,8 @@ footer {
 *******************************************************************************/
 .form-search {
   background: #49a8eb;
-  padding: 25px; }
+  padding: 25px;
+  margin: 15px 0 0 0; }
   .form-search button[type='submit'] {
     height: 50px; }
   .form-search input::-webkit-input-placeholder {
@@ -8369,6 +8373,9 @@ form .zip-fields {
   text-decoration: none; }
   .rate-reviews a:hover {
     text-decoration: underline; }
+.rate-reviews span {
+  font-weight: 500;
+  font-size: 14px; }
 
 /*******************************************************************************
 ********* officer-list
@@ -8457,7 +8464,7 @@ form .zip-fields {
   flex-wrap: wrap;
   background: url(../images/background-map.jpg) no-repeat center;
   background-size: cover;
-  margin: 15px -45px;
+  margin: 15px -45px 50px;
   padding: 45px; }
   .profile-header .profile-photo {
     display: block;
@@ -8555,16 +8562,196 @@ form .zip-fields {
   @media (max-width: 639px) {
     .profile-header {
       width: calc(100% + 50px);
-      margin: 15px -25px; } }
+      margin: 15px -25px 50px; } }
 
 /*******************************************************************************
 ********* profile-about
 *******************************************************************************/
+.profile-about {
+  margin: 0 0 50px 0; }
+  .profile-about p {
+    font-size: 14px;
+    line-height: 30px; }
+    .profile-about p a {
+      font-size: inherit; }
+  .profile-about .profile-about-note {
+    font-size: 14px;
+    font-weight: 700; }
+    .profile-about .profile-about-note a,
+    .profile-about .profile-about-note span {
+      font-weight: 400;
+      font-size: inherit; }
+
 /*******************************************************************************
 ********* profile-contacts
 *******************************************************************************/
+.profile-contacts {
+  background: #f3f3f3;
+  padding: 25px 30px;
+  margin: 0 0 50px 0; }
+
+.profile-contacts-item {
+  margin: 0 0 15px 0; }
+  .profile-contacts-item:last-of-type {
+    margin: 0; }
+  .profile-contacts-item span {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .profile-contacts-item address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2; }
+  .profile-contacts-item a {
+    font-size: 14px;
+    text-decoration: none; }
+    .profile-contacts-item a:hover {
+      text-decoration: underline; }
+    .profile-contacts-item a[href^="tel:"] {
+      color: #444; }
+    .profile-contacts-item a:not([href^="tel:"]) {
+      display: inline-block;
+      max-width: 100%;
+      overflow: hidden;
+      white-space: normal;
+      text-overflow: ellipsis; }
+
 /*******************************************************************************
 ********* profile-reviews
+*******************************************************************************/
+.review-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 25px 0;
+  border-bottom: 1px solid #999; }
+
+.review-reviewer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 200px;
+  flex-shrink: 0;
+  margin: 0 30px 0 0;
+  position: relative;
+  padding: 0 0 30px 0; }
+
+.review-category {
+  font-size: 14px;
+  color: #999;
+  font-weight: 500;
+  margin: 0 0 15px 0; }
+
+.review-name {
+  margin: 0 0 15px 0;
+  color: #999;
+  font-size: 14px; }
+  .review-name span {
+    font-size: inherit;
+    color: #444;
+    font-weight: 500;
+    margin: 0 5px 0 0; }
+
+.review-date {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+  .review-date span {
+    font-size: 14px;
+    font-weight: 500; }
+  .review-date time {
+    color: #999;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 0 0 2px 0; }
+
+.review-body {
+  width: 100%;
+  max-width: 760px; }
+
+.review-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 20px 0; }
+
+.review-text {
+  font-size: 14px; }
+  .review-text a {
+    font-size: inherit; }
+
+@media (max-width: 639px) {
+  .review-item {
+    flex-wrap: wrap; }
+
+  .review-body {
+    margin: 30px 0 0 0;
+    max-width: none; }
+
+  .review-title {
+    margin: 0 0 10px 0; } }
+/*******************************************************************************
+********* nav-pager
+*******************************************************************************/
+.nav-pager {
+  text-align: right;
+  margin: 30px 0 0 0; }
+
+.nav-pager-amount {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #999;
+  margin: 0 20px 0 0; }
+
+.nav-pager-list {
+  display: inline-block;
+  vertical-align: middle; }
+  .nav-pager-list a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 2px;
+    text-decoration: none;
+    font-size: 12px; }
+    .nav-pager-list a.active {
+      background: #f3f3f3;
+      color: #444; }
+    .nav-pager-list a:hover {
+      color: #444; }
+
+.nav-pager-controls {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px; }
+  .nav-pager-controls a {
+    text-decoration: none; }
+  .nav-pager-controls i {
+    font-size: 14px;
+    color: inherit; }
+  .nav-pager-controls span {
+    margin: 0 5px;
+    color: inherit;
+    font-size: 14px; }
+  .nav-pager-controls a:hover span {
+    text-decoration: underline; }
+
+@media (max-width: 480px) {
+  .nav-pager {
+    text-align: center; }
+
+  .nav-pager-controls {
+    width: 100%;
+    margin: 20px 0 0 0; } }
+/*******************************************************************************
+********* modal
 *******************************************************************************/
 
 /*# sourceMappingURL=all-styles.css.map */
